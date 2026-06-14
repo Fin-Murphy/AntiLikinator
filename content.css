@@ -1,0 +1,4 @@
+/* A post that was already liked when it first rendered on the Following feed. */
+.alik-hidden {
+  display: none !important;
+}

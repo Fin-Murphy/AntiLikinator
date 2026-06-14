@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AntiLikinator",
+  "version": "1.0.0",
+  "description": "Hides already-liked posts from Instagram's Following feed so you only see what you haven't seen.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AntiLikinator"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
